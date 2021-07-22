@@ -34,28 +34,10 @@ body {
     color: white;
 }
 
-.bg-img {
-    background-image   : url('/assets/images/home-bg.jpg');
-    background-position: center;
-    background-size    : cover;
+/* Body */
+
+.body {
 }
 
-.bg-img-filter {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter : blur(2px);
-    height          : 100%;
-    width           : 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading {
-    text-align: center;
-    margin-top: 7rem;
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-}
 
 @media only screen and (max-width: 768px) {}
