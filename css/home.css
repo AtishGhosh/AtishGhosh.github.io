@@ -20,8 +20,9 @@ body {
 }
 
 .navbar {
-    margin: auto 5%;
+    padding: 0 10%;
     height: 4rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .title-name {
@@ -32,12 +33,65 @@ body {
 
 .nav-link {
     color: white;
+    margin: auto 0.5rem;
 }
 
 /* Body */
 
-.body {
+.intro {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 0 10%;
 }
 
+.title {
+    width: 65%;
+    color: white;
+    margin-left: 5%;
+}
+
+.title-text-1 {
+    font-size: 2rem;
+}
+
+.title-text-2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.title-text-3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+    justify-content: flex-start;
+}
+
+.social-anchor {
+    margin: 0 1rem;
+    color: white;
+}
+
+.picture {
+    width: 35%;
+    text-align: center;
+}
+
+.home-content{
+    background-color: #eee;
+    height: 100rem;
+}
 
 @media only screen and (max-width: 768px) {}
