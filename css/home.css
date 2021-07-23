@@ -19,16 +19,30 @@ body {
     font-family     : 'Nunito', sans-serif;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Navbar */
+
 .navbar {
     padding: 0 10%;
     height: 4rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    transition-duration: 0.3s;
 }
 
 .title-name {
-    color: white;
+    color: transparent;
     font-weight: 700;
     font-size: 1.5rem;
+    transition-duration: 0.3s;
+    display: none;
 }
 
 .nav-link {
@@ -36,23 +50,68 @@ body {
     margin: auto 0.5rem;
 }
 
+.scroll-active {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 0.5rem rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+}
+
+.scroll-active .navbar {
+    height: 3rem;
+    transition-duration: 0.4s;
+}
+
+.scroll-active .title-name {
+    display: block;
+}
+
+.scroll-active a{
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.social-tw:hover {
+    color: #1DA1F2;
+}
+
+.social-te:hover {
+    color: #0088cc;
+}
+
+.social-li:hover {
+    color: #0e76a8;
+}
+
+.social-gi:hover {
+    color: #2b3137;
+}
+
 /* Body */
 
+.intro-bg {
+    background-image: url('/assets/images/home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .intro {
-    margin-top: 4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: space-around;
     justify-items: center;
     justify-content: space-evenly;
-    padding: 0 10%;
+    padding: 4rem 10% 0 10%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
     width: 65%;
     color: white;
     margin-left: 5%;
+    margin-top: -4rem;
 }
 
 .title-text-1 {
@@ -65,7 +124,7 @@ body {
 }
 
 .title-text-3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
