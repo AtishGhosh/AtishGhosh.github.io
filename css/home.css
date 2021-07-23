@@ -1,73 +1,74 @@
 .default,
 .lightmode {
-    --background-color: #f0f0f0;
-    --navbar-color    : rgba(240, 240, 240, 0.9);
+    --background-color: #eee;
+    --navbar-color    : rgba(238, 238, 238, 0.9);
+    --text-color      : black;
 }
 
 .darkmode {
     --background-color: #222;
+    --navbar-color    : rgba(34, 34, 34, 0.9);
+    --text-color      : white;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
         --background-color: #222;
+        --navbar-color    : rgba(34, 34, 34, 0.9);
+        --text-color      : white;
     }
 }
 
 body {
     background-color: var(--background-color);
     font-family     : 'Nunito', sans-serif;
+    color           : var(--text-color);
 }
 
 .unselectable {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-user-select  : none;
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
 }
 
 /* Navbar */
 
 .navbar {
-    padding: 0 10%;
-    height: 4rem;
-    background-color: transparent;
+    padding            : 0 10%;
+    height             : 3.5rem;
+    background-color   : transparent;
     transition-duration: 0.3s;
 }
 
 .title-name {
-    color: transparent;
-    font-weight: 700;
-    font-size: 1.5rem;
+    color              : transparent;
+    font-weight        : 700;
+    font-size          : 1.5rem;
     transition-duration: 0.3s;
-    display: none;
+    display            : none;
 }
 
 .nav-link {
-    color: white;
+    color : white;
     margin: auto 0.5rem;
 }
 
 .scroll-active {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 3px 0.5rem rgba(0, 0, 0, 0.1);
-    transition-duration: 0.4s;
-}
-
-.scroll-active .navbar {
-    height: 3rem;
+    background-color   : var(--navbar-color);
+    backdrop-filter    : blur(5px);
+    box-shadow         : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
     transition-duration: 0.4s;
 }
 
 .scroll-active .title-name {
     display: block;
+    color  : var(--text-color);
 }
 
-.scroll-active a{
-    color: black;
+.scroll-active a {
     transition-duration: 0.4s;
 }
 
@@ -90,28 +91,28 @@ body {
 /* Body */
 
 .intro-bg {
-    background-image: url('/assets/images/home-bg.jpg');
+    background-image   : url('/assets/images/home-bg.jpg');
     background-position: center;
-    background-size: cover;
+    background-size    : cover;
 }
 
 .intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    justify-items: center;
-    justify-content: space-evenly;
-    padding: 4rem 10% 0 10%;
-    backdrop-filter: blur(4px);
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    align-content   : space-around;
+    justify-items   : center;
+    justify-content : space-evenly;
+    padding         : 4rem 10% 0 10%;
+    backdrop-filter : blur(4px);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
-    width: 65%;
-    color: white;
+    width      : 65%;
+    color      : white;
     margin-left: 5%;
-    margin-top: -4rem;
+    margin-top : -5rem;
 }
 
 .title-text-1 {
@@ -119,38 +120,79 @@ body {
 }
 
 .title-text-2 {
-    font-size: 4rem;
+    font-size  : 4.5rem;
     font-weight: 700;
 }
 
 .title-text-3 {
-    font-size: 1.75rem;
+    font-size  : 2rem;
     font-weight: 700;
 }
 
 .dock {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1.5rem;
-    align-items: center;
-    align-content: space-around;
-    justify-items: center;
+    display        : flex;
+    flex-direction : row;
+    margin-top     : 1.5rem;
+    align-items    : center;
+    align-content  : space-around;
+    justify-items  : center;
     justify-content: flex-start;
 }
 
 .social-anchor {
     margin: 0 1rem;
-    color: white;
+    color : white;
 }
 
 .picture {
-    width: 35%;
+    width     : 35%;
     text-align: center;
 }
 
-.home-content{
-    background-color: #eee;
-    height: 100rem;
+.home-content {
+    background-color: var(--background-color);
+}
+
+.about {
+    text-align: center;
+    margin    : 1rem 0;
+}
+
+.about-title {
+    font-size  : 3rem;
+    font-weight: 700;
+}
+
+.about-hr {
+    width        : 12rem;
+    display      : inline-block;
+    margin-top   : 0;
+    margin-bottom: 0.75rem;
+}
+
+.about-text {
+    display   : inline-block;
+    text-align: center;
+    width     : 75%;
+}
+
+.skills {
+    text-align     : center;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 1rem;
+}
+
+.card {
+    width     : 80%;
+    box-shadow: 0 3px 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+
+.skills-title {
+    font-size  : 2rem;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {}
