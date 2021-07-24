@@ -1,21 +1,24 @@
 .default,
 .lightmode {
-    --background-color: #eee;
-    --navbar-color    : rgba(238, 238, 238, 0.9);
-    --text-color      : black;
+    --background-color  : #eee;
+    --navbar-color      : rgba(238, 238, 238, 0.9);
+    --text-color        : black;
+    --inverse-text-color: white;
 }
 
 .darkmode {
-    --background-color: #222;
-    --navbar-color    : rgba(34, 34, 34, 0.9);
-    --text-color      : white;
+    --background-color  : #222;
+    --navbar-color      : rgba(34, 34, 34, 0.9);
+    --text-color        : white;
+    --inverse-text-color: black;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
     .default {
-        --background-color: #222;
-        --navbar-color    : rgba(34, 34, 34, 0.9);
-        --text-color      : white;
+        --background-color  : #222;
+        --navbar-color      : rgba(34, 34, 34, 0.9);
+        --text-color        : white;
+        --inverse-text-color: black;
     }
 }
 
@@ -68,9 +71,20 @@ body {
     color  : var(--text-color);
 }
 
-.scroll-active a {
+.scroll-active .title-name:hover {
+    color: #0a58ca;
+}
+
+.scroll-active .nav-link {
+    color              : var(--text-color);
     transition-duration: 0.4s;
 }
+
+.scroll-active .nav-link:hover {
+    color: #0a58ca;
+}
+
+/* Body */
 
 .social-tw:hover {
     color: #1DA1F2;
@@ -87,8 +101,6 @@ body {
 .social-gi:hover {
     color: #2b3137;
 }
-
-/* Body */
 
 .intro-bg {
     background-image   : url('/assets/images/home-bg.jpg');
@@ -185,14 +197,22 @@ body {
 }
 
 .card {
-    width     : 80%;
-    box-shadow: 0 3px 0.5rem rgba(0, 0, 0, 0.1);
-    background-color: black;
+    width           : 85%;
+    box-shadow      : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: var(--inverse-text-color);
+    border-radius: 3rem;
 }
 
 .skills-title {
-    font-size  : 2rem;
+    font-size  : 2.25rem;
     font-weight: 700;
+}
+
+.skills-hr {
+    width        : 12rem;
+    display      : inline-block;
+    margin-top   : 0;
+    margin-bottom: 0.75rem;
 }
 
 @media only screen and (max-width: 768px) {}
