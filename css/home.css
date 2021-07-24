@@ -4,6 +4,7 @@
     --navbar-color      : rgba(238, 238, 238, 0.9);
     --text-color        : black;
     --inverse-text-color: white;
+    --menu-icon         : url('/assets/menu/menu-light.png');
 }
 
 .darkmode {
@@ -11,6 +12,7 @@
     --navbar-color      : rgba(34, 34, 34, 0.9);
     --text-color        : white;
     --inverse-text-color: black;
+    --menu-icon         : url('/assets/menu/menu-dark.png');
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -19,6 +21,7 @@
         --navbar-color      : rgba(34, 34, 34, 0.9);
         --text-color        : white;
         --inverse-text-color: black;
+        --menu-icon         : url('/assets/menu/menu-dark.png');
     }
 }
 
@@ -40,10 +43,17 @@ body {
 /* Navbar */
 
 .navbar {
-    padding            : 0 10%;
-    height             : 3.5rem;
+    padding            : 0.4rem 10%;
     background-color   : transparent;
     transition-duration: 0.3s;
+}
+
+.navbar-toggler-icon {
+    background-image: var(--menu-icon);
+}
+
+.navbar-toggler-icon:hover {
+    background-image: url('../assets/menu/menu-hover.png');
 }
 
 .title-name {
@@ -51,12 +61,13 @@ body {
     font-weight        : 700;
     font-size          : 1.5rem;
     transition-duration: 0.3s;
-    display            : none;
+    pointer-events     : none;
 }
 
 .nav-link {
     color : white;
     margin: auto 0.5rem;
+    text-align: end;
 }
 
 .scroll-active {
@@ -67,8 +78,9 @@ body {
 }
 
 .scroll-active .title-name {
-    display: block;
-    color  : var(--text-color);
+    display       : block;
+    color         : var(--text-color);
+    pointer-events: all;
 }
 
 .scroll-active .title-name:hover {
@@ -151,6 +163,10 @@ body {
     justify-content: flex-start;
 }
 
+#social-first {
+    margin-left: 0;
+}
+
 .social-anchor {
     margin: 0 1rem;
     color : white;
@@ -200,7 +216,7 @@ body {
     width           : 85%;
     box-shadow      : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
     background-color: var(--inverse-text-color);
-    border-radius: 3rem;
+    border-radius   : 3rem;
 }
 
 .skills-title {
@@ -216,40 +232,101 @@ body {
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
+    position  : relative;
+    display   : inline-block;
     text-align: center;
-    opacity: 100%;
+    opacity   : 100%;
 }
-  
+
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
+    visibility      : hidden;
+    width           : 120px;
     background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: 105%;
-    left: 50%;
-    margin-left: -60px;
+    color           : #fff;
+    text-align      : center;
+    border-radius   : 6px;
+    padding         : 5px 0;
+    position        : absolute;
+    z-index         : 1;
+    top             : 105%;
+    left            : 50%;
+    margin-left     : -60px;
 }
-  
+
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
+    content     : "";
+    position    : absolute;
+    bottom      : 100%;
+    left        : 50%;
+    margin-left : -5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
 }
-  
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .navbar {
+        background-color: var(--navbar-color);
+        backdrop-filter: blur(4px);
+    }
+
+    .navbar-collapse {
+        padding: 0.5rem 0;
+    }
+
+    /* Body */
+
+    .intro {
+        flex-direction: column;
+        height: auto;
+        padding: 5rem 0 0 0;
+    }
+
+    .title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .title-name {
+        color: var(--text-color);
+    }
+
+    .lastname {
+        display: none;
+    }
+
+    .title-text-1 {
+        font-size: 1.5rem;
+    }
+    
+    .title-text-2 {
+        font-size  : 3.5rem;
+        font-weight: 700;
+    }
+    
+    .title-text-3 {
+        font-size  : 1.5rem;
+        font-weight: 700;
+    }
+
+    .dock {
+        justify-content: center;
+    }
+
+    #social-first {
+        margin-left: 1rem;
+    }
+
+    .picture {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+}
