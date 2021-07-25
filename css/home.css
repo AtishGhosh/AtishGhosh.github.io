@@ -96,7 +96,7 @@ body {
     color: #0a58ca;
 }
 
-/* Body */
+/* Intro */
 
 .social-tw:hover {
     color: #1DA1F2;
@@ -177,6 +177,8 @@ body {
     text-align: center;
 }
 
+/* Content */
+
 .home-content {
     background-color: var(--background-color);
 }
@@ -189,13 +191,6 @@ body {
 .about-title {
     font-size  : 3rem;
     font-weight: 700;
-}
-
-.about-hr {
-    width        : 12rem;
-    display      : inline-block;
-    margin-top   : 0;
-    margin-bottom: 0.75rem;
 }
 
 .about-text {
@@ -212,7 +207,7 @@ body {
     padding        : 1rem;
 }
 
-.card {
+.skills-card {
     width           : 85%;
     box-shadow      : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
     background-color: var(--inverse-text-color);
@@ -222,13 +217,6 @@ body {
 .skills-title {
     font-size  : 2.25rem;
     font-weight: 700;
-}
-
-.skills-hr {
-    width        : 12rem;
-    display      : inline-block;
-    margin-top   : 0;
-    margin-bottom: 0.75rem;
 }
 
 .tooltip {
@@ -266,6 +254,10 @@ body {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.work {
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -327,6 +319,10 @@ body {
     .picture {
         width: 60%;
         margin-top: 1rem;
+    }
+
+    .skills-card {
+        width: 90%;
     }
 
 }
