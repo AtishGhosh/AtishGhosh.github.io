@@ -46,6 +46,7 @@ body {
     padding            : 0.4rem 10%;
     background-color   : transparent;
     transition-duration: 0.3s;
+    z-index: 2;
 }
 
 .navbar-toggler-icon {
@@ -65,14 +66,14 @@ body {
 }
 
 .nav-link {
-    color : white;
-    margin: auto 0.5rem;
+    color     : white;
+    margin    : auto 0.5rem;
     text-align: end;
 }
 
 .scroll-active {
     background-color   : var(--navbar-color);
-    backdrop-filter    : blur(5px);
+    backdrop-filter    : blur(4px);
     box-shadow         : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
     transition-duration: 0.4s;
 }
@@ -181,16 +182,18 @@ body {
 
 .home-content {
     background-color: var(--background-color);
+    text-align      : center;
 }
 
 .about {
     text-align: center;
-    margin    : 1rem 0;
+    padding   : 1rem 0;
 }
 
 .about-title {
-    font-size  : 3rem;
-    font-weight: 700;
+    font-size    : 2.5rem;
+    font-weight  : 700;
+    margin-bottom: 1rem;
 }
 
 .about-text {
@@ -200,23 +203,18 @@ body {
 }
 
 .skills {
-    text-align     : center;
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    padding        : 1rem;
-}
-
-.skills-card {
-    width           : 85%;
-    box-shadow      : 0 3px 0.5rem rgba(0, 0, 0, 0.1);
-    background-color: var(--inverse-text-color);
-    border-radius   : 3rem;
+    text-align: center;
+    padding   : 1rem 0;
 }
 
 .skills-title {
-    font-size  : 2.25rem;
-    font-weight: 700;
+    font-size    : 2.5rem;
+    font-weight  : 700;
+}
+
+.skills-row {
+    width  : 80%;
+    display: inline-block;
 }
 
 .tooltip {
@@ -224,6 +222,8 @@ body {
     display   : inline-block;
     text-align: center;
     opacity   : 100%;
+    margin    : 1rem 0;
+    z-index: 0;
 }
 
 .tooltip .tooltiptext {
@@ -256,17 +256,13 @@ body {
     visibility: visible;
 }
 
-.work {
-    
-}
-
 @media only screen and (max-width: 768px) {
 
     /* Navbar */
 
     .navbar {
         background-color: var(--navbar-color);
-        backdrop-filter: blur(4px);
+        backdrop-filter : blur(4px);
     }
 
     .navbar-collapse {
@@ -277,12 +273,12 @@ body {
 
     .intro {
         flex-direction: column;
-        height: auto;
-        padding: 5rem 0 0 0;
+        height        : auto;
+        padding       : 5rem 0 0 0;
     }
 
     .title {
-        margin: 0;
+        margin    : 0;
         text-align: center;
     }
 
@@ -297,12 +293,12 @@ body {
     .title-text-1 {
         font-size: 1.5rem;
     }
-    
+
     .title-text-2 {
         font-size  : 3.5rem;
         font-weight: 700;
     }
-    
+
     .title-text-3 {
         font-size  : 1.5rem;
         font-weight: 700;
@@ -317,12 +313,8 @@ body {
     }
 
     .picture {
-        width: 60%;
+        width     : 60%;
         margin-top: 1rem;
-    }
-
-    .skills-card {
-        width: 90%;
     }
 
 }
