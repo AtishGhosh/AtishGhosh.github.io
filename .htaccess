@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404   https://atishghosh.github.io/mamai/404

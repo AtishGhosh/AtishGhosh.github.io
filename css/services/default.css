@@ -1,0 +1,28 @@
+@import url('/css/root.css');
+
+.page {
+    padding: 5.5rem 2rem 1rem 2rem;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    margin-bottom: 1rem;
+}
+
+.sub-sub-heading {
+    background-color: var(--accent-color);
+    padding: 0.1rem 0 0.1rem 0.4rem;
+    color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+#row {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
