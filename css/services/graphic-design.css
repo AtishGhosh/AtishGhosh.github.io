@@ -16,10 +16,11 @@
     color: var(--text-color);
     border: 1px solid var(--accent-color);
     margin-bottom: 1rem;
+    background-color: var(--secondary-color);
 }
 
 .design-card:hover {
-    color: var(--inverted-text-color);
+    color: white;
     background-color: var(--accent-color);
 }
 

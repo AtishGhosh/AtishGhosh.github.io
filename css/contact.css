@@ -25,6 +25,7 @@
     border: 1px solid var(--accent-color);
     color: var(--text-color);
     text-decoration: none;
+    background-color: var(--secondary-color);
 }
 
 .card-call:hover, .card-mail:hover {
@@ -41,6 +42,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.card-map {
+    background-color: var(--secondary-color);
 }
 
 .map-card-body {
@@ -60,6 +65,10 @@
 }
 
 /* Form */
+
+#send-us-a-message {
+    background-color: var(--secondary-color);
+}
 
 .form-label {
     margin-bottom: 0;

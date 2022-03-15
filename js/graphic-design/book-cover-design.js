@@ -1,4 +1,4 @@
-indexNumbers = ["1", "2", "3", "4", "5", "6"]
+indexNumbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 row1str = "<div class=\"col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3\"><div type=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#img";
 row2str = "modal\"><div class=\"img-";
@@ -11,12 +11,12 @@ for (var i = 0; i < indexNumbers.length; i++) {
 
 document.getElementById("row").innerHTML = strRow;
 
-imgCodes = ["BRD0001", "BRD0002", "BRD0003", "BRD0004", "BRD0005", "BRD0006"]
+imgCodes = ["BCD0001", "BCD0002", "BCD0003", "BCD0004", "BCD0005", "BCD0006", "BCD0007", "BCD0008", "BCD0009"]
 
 modal1str = "<div class=\"modal fade\" id=\"img";
 modal2str = "modal\" tabindex=\"-1\" aria-labelledby=\"img";
 modal3str = "modal\" aria-hidden=\"true\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"img";
-modal4str = "modalLabel\">Ad Design</h5><button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button></div><div class=\"modal-body\"><img src=\"/assets/services/graphic-design/brochure-design/";
+modal4str = "modalLabel\">Ad Design</h5><button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button></div><div class=\"modal-body\"><img src=\"/assets/services/graphic-design/book-cover-design/";
 modal5str = ".jpg\" alt=\"\" width=\"100%\"></div><div class=\"modal-footer\"><span class=\"text-muted\">Libra Techno Code: ";
 modal6str = "</span></div></div></div></div>";
 strModal = "";

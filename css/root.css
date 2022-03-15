@@ -132,7 +132,7 @@ body {
 /* Theme */
 
 .modal-content {
-    background-color: var(--background-color);
+    background-color: var(--inverted-text-color);
 }
 
 .btn-close {
