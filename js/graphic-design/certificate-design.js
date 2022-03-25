@@ -16,7 +16,7 @@ imgCodes = ["CFD0001", "CFD0002", "CFD0003", "CFD0004", "CFD0005", "CFD0006", "C
 modal1str = "<div class=\"modal fade\" id=\"img";
 modal2str = "modal\" tabindex=\"-1\" aria-labelledby=\"img";
 modal3str = "modal\" aria-hidden=\"true\"><div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"img";
-modal4str = "modalLabel\">Ad Design</h5><button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button></div><div class=\"modal-body\"><img src=\"/assets/services/graphic-design/certificate-design/";
+modal4str = "modalLabel\">Certificate Design</h5><button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button></div><div class=\"modal-body\"><img src=\"/assets/services/graphic-design/certificate-design/";
 modal5str = ".jpg\" alt=\"\" width=\"100%\"></div><div class=\"modal-footer\"><span class=\"text-muted\">Libra Techno Code: ";
 modal6str = "</span></div></div></div></div>";
 strModal = "";

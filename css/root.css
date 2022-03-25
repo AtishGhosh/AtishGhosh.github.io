@@ -159,6 +159,9 @@ body {
         padding-right: 0.75rem;
         text-align: end;
     }
+    .dropdown-item {
+        text-align: end;
+    }
     .bottombar {
         padding-bottom: 1rem;
     }
