@@ -81,3 +81,13 @@
 #formControlTextareaMessage {
     resize: none;
 }
+
+@media only screen and (max-width: 768px) {
+    .page {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .call-card-body, .mail-card-body, .map-card-body {
+        flex-direction: column;
+    }
+}
