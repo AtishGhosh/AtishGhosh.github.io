@@ -150,7 +150,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar-collapse {
+    .navbar-nav {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
