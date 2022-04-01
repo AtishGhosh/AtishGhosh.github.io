@@ -1,31 +1,53 @@
 @import url('/css/root.css');
 
-.page {
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.face {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.content {
-    padding-top: 2rem;
-    text-align: center;
-}
-
 .welcome {
     font-size: 6rem;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
 }
 
 .card {
     border-radius: 1rem;
     background-color: var(--secondary-color);
+}
+
+/* Testimonials */
+
+.testimonials {
+    text-align: center;
+    background-color: var(--inverted-text-color);
+}
+
+.clients-heading {
+    font-size: 3rem;
+    color: var(--accent-color);
+    padding-top: 1rem;
+}
+
+.clients-text {
+    max-width: 50rem;
+    display: inline-block;
+}
+
+.quote-icon {
+    color: var(--accent-color);
+}
+
+.inverted-quote-icon {
+    color: var(--accent-color);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.testimonial-text {
+    min-height: 14rem;
+}
+
+.blockquote-footer {
+    font-size: 1.1rem;
 }
 
 /* Home button */
@@ -71,20 +93,4 @@
 
 #formControlTextareaQuery {
     resize: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .welcome {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-    }
-
-    #welcome-text {
-        font-size: 0.9rem;
-    }
-
-    .page {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 }
