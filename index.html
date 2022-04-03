@@ -213,7 +213,7 @@
                   <div class="col-md-6">
                     <div class="card" id="get-a-free-quote" style="margin-bottom: 2rem;">
                       <div class="card-body">
-                        <form action="">
+                        <form action="" method="POST">
                           <h5 class="card-title mb-3">
                             Get a free quote
                           </h5>
@@ -233,10 +233,11 @@
                             <label for="formControlTextareaQuery" class="form-label">Query <span class="req">*</span></label>
                             <textarea class="form-control" id="formControlTextareaQuery" rows="3" placeholder="Write your query"></textarea>
                           </div>
-                          <div class="alert alert-primary mb-3" role="alert">
-                            reCAPTCHA
+                          <div class="mb-3">
+                            <div class="g-recaptcha" data-sitekey="6LezkzwfAAAAAJIBUZ1hdNzHsmZBylJMx47yhgVM" data-callback="verifyCaptcha" id="reCAPTCHA" role="checkbox" aria-required="true"></div>
+                            <span id="reCAPTCHA-error">reCAPTCHA required</span>
                           </div>
-                          <a class="btn btn-primary" href="" role="button">Submit</a>
+                          <button class="btn btn-primary" type="submit" id="submit" onclick="">Submit</button>
                         </form>
                       </div>
                     </div>
@@ -248,6 +249,8 @@
     <div class="bottombar" id="bottombar"></div>
     <!-- Theme Modal -->
     <div id="modal-theme-insert"></div>
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>
