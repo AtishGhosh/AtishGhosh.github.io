@@ -91,12 +91,12 @@
     color: red;
 }
 
-#formControlTextareaQuery {
+#formControlTextareaMessage {
     resize: none;
 }
 
 #reCAPTCHA-error {
-    color: transparent;
+    color: red;
     font-size: small;
     display: none;
 }
