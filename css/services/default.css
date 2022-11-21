@@ -8,6 +8,7 @@
     font-size: 4rem;
     text-align: center;
     margin-bottom: 1.5rem;
+    overflow-wrap: break-word;
 }
 
 .sub-heading {
@@ -41,6 +42,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+        text-align: start;
+    }
+
     .page {
         padding-left: 1rem;
         padding-right: 1rem;
